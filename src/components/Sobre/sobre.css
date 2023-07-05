@@ -1,0 +1,46 @@
+.article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre{
+    padding: 30px 0;
+}
+
+.sobre h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sobre p{
+    font-size: 1rem;
+    width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    padding: 0 50px;
+}
+
+.skills{
+    padding: 0 30px 30px 30px;
+}
+
+.skills h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skills ul{
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    gap: 25px;
+}
+
+.skills li{
+    width: 100px;
+    height: 100px;
+}
