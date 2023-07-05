@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import './home.css';
 
+import Main from '../../components/Main';
+
 function Home(){
     return(
-        <div>
-            <h1>Home page</h1>
+        <div className='app'>
+            <Main></Main>
         </div>
     );
 }
