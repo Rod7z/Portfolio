@@ -4,9 +4,12 @@ import Home from './pages/Home';
 
 import Error from './pages/Error';
 
+import Header from './components/Header';
+
 function RoutesApp(){
     return(
         <BrowserRouter>
+            <Header/>
             <Routes>
                 <Route path='/' element={ <Home/> } />
 
