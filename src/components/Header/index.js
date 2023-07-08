@@ -1,31 +1,20 @@
 import './header.css';
 import { Link } from 'react-router-dom';
 
+const mobileWidth = 800;
+
 function Header() {
-
-  const mobileWidth = 800;
-  
-  let burg = document.getElementById('burguer')
-  let nav = document.getElementById('nav')
-
-  function openMenu(){
-
-    if (window.innerWidth <= mobileWidth) {
-      
-    } else {
-
-    }
-  }
 
  return (
    <header>
         <div className='logo'>logo</div>
 
         <div className='menu'>
-            
-            <button id='burguer' style={{display: 'none'}} onClick={openMenu}>Menu</button>
 
-            <nav id='nav' style={{display: 'flex'}} onClick={openMenu}>
+          {window.innerWidth <= mobileWidth && <button id='burguer'>Menu</button>} 
+
+          {window.innerWidth > mobileWidth && 
+            <nav id='nav'>
               <ul>
                   <li><Link>Sobre</Link></li>
                   <li><Link>Habilidades</Link></li>
@@ -33,6 +22,8 @@ function Header() {
                   <li><Link>Contato</Link></li>
               </ul>
             </nav>
+          }         
+            
         </div>
    </header>
  );
