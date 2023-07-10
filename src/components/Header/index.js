@@ -2,16 +2,19 @@ import './header.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 const mobileWidth = 1000;
 
-let displayX = 'none';
-let displayBar = 'flex';
-
 function Header() {
+  const [menu, setMenu] = useState(true);
 
   function openMenu(){
-    
+    setMenu(false);
+  }
+
+  function closeMenu(){
+    setMenu(true);
   }
 
  return (
@@ -20,12 +23,17 @@ function Header() {
 
         <div className='menu'>
 
-          {window.innerWidth <= mobileWidth && 
-            <button id='burguer' onChange={openMenu}>
-              <FontAwesomeIcon style={{display: displayBar}} icon={faBars} />
-              <FontAwesomeIcon style={{display: displayX}} icon={faX} />
+          {window.innerWidth <= mobileWidth && menu &&
+            <button id='burguer' onClick={openMenu}>
+              <FontAwesomeIcon icon={faBars}/>
+            </button> 
+          }
+
+          {window.innerWidth <= mobileWidth && menu == false && 
+            <button id='burguer' onClick={closeMenu}>
+              <FontAwesomeIcon icon={faX}/>
             </button>
-          } 
+          }
 
           {window.innerWidth > mobileWidth && 
             <nav id='nav'>
