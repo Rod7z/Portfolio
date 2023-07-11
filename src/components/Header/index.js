@@ -28,11 +28,8 @@ function Header() {
           )}
 
           {window.innerWidth <= mobileWidth && menu === false && (
-            <FontAwesomeIcon className='faX' icon={faX} onClick={closeMenu}/>
-          )}
-
-          {window.innerWidth <= mobileWidth && menu === false && (
             <nav className='dropdown'>
+              <FontAwesomeIcon className='faX' icon={faX} onClick={closeMenu}/>
               <ul className='dropmenu'>
                 <li><Link onClick={closeMenu}>Sobre</Link></li>
                 <li><Link onClick={closeMenu}>Habilidades</Link></li>
