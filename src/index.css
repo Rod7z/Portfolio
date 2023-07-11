@@ -7,3 +7,12 @@
 body{
   font-family: sans-serif;
 }
+
+ul{ 
+  display: flex;
+  list-style-type: none;
+}
+
+li{
+  padding: 5px;
+}

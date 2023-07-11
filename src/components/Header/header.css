@@ -19,21 +19,46 @@ header{
     margin-left: 5%;
 }
 
+#nav li a:hover{
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
 .menu{
     margin-right: 5%;
 }
 
-ul{ 
-    display: flex;
-    list-style-type: none;
-}
-
-li{
-    padding: 5px;
-}
-
-li a:hover{
-    background-color: aqua;
+.fa-bars, .fa-x{
     cursor: pointer;
-    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.fa-x{
+    font-size: 1.2rem;
+}
+
+.dropdown{
+    display: block;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 70px;
+    right: 0;
+    background-color: aqua;
+}
+
+.dropmenu{
+    flex-direction: column;
+}
+
+.dropmenu li{
+    padding: 0;
+}
+
+.dropmenu li a{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 45px;
 }

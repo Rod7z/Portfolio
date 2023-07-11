@@ -23,28 +23,35 @@ function Header() {
 
         <div className='menu'>
 
-          {window.innerWidth <= mobileWidth && menu &&
-            <button id='burguer' onClick={openMenu}>
-              <FontAwesomeIcon icon={faBars}/>
-            </button> 
-          }
+          {window.innerWidth <= mobileWidth && menu && (
+            <FontAwesomeIcon icon={faBars} onClick={openMenu}/>
+          )}
 
-          {window.innerWidth <= mobileWidth && menu == false && 
-            <button id='burguer' onClick={closeMenu}>
-              <FontAwesomeIcon icon={faX}/>
-            </button>
-          }
+          {window.innerWidth <= mobileWidth && menu === false && (
+            <FontAwesomeIcon className='faX' icon={faX} onClick={closeMenu}/>
+          )}
 
-          {window.innerWidth > mobileWidth && 
-            <nav id='nav'>
-              <ul>
-                  <li><Link>Sobre</Link></li>
-                  <li><Link>Habilidades</Link></li>
-                  <li><Link>Projetos</Link></li>
-                  <li><Link>Contato</Link></li>
+          {window.innerWidth <= mobileWidth && menu === false && (
+            <nav className='dropdown'>
+              <ul className='dropmenu'>
+                <li><Link onClick={closeMenu}>Sobre</Link></li>
+                <li><Link onClick={closeMenu}>Habilidades</Link></li>
+                <li><Link onClick={closeMenu}>Projetos</Link></li>
+                <li><Link onClick={closeMenu}>Contato</Link></li>
               </ul>
             </nav>
-          }         
+          )}
+
+          {window.innerWidth > mobileWidth && (
+            <nav id='nav'>
+              <ul>
+                <li><Link>Sobre</Link></li>
+                <li><Link>Habilidades</Link></li>
+                <li><Link>Projetos</Link></li>
+                <li><Link>Contato</Link></li>
+              </ul>
+            </nav>
+          )}   
             
         </div>
    </header>
