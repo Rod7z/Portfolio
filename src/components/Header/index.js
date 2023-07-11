@@ -1,7 +1,7 @@
 import './header.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faX, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 const mobileWidth = 1000;
@@ -31,7 +31,7 @@ function Header() {
             <nav className='dropdown'>
               <FontAwesomeIcon className='faX' icon={faX} onClick={closeMenu}/>
               <ul className='dropmenu'>
-                <li><Link onClick={closeMenu}>Sobre</Link></li>
+                <li><Link onClick={closeMenu}><FontAwesomeIcon icon={faAddressCard}/>Sobre</Link></li>
                 <li><Link onClick={closeMenu}>Habilidades</Link></li>
                 <li><Link onClick={closeMenu}>Projetos</Link></li>
                 <li><Link onClick={closeMenu}>Contato</Link></li>
