@@ -20,7 +20,7 @@ header{
 }
 
 #nav li a:hover{
-    background-color: aqua;
+    background-color: #9c9c9c52;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -34,9 +34,23 @@ header{
     font-size: 1rem;
 }
 
+nav a {
+    font-size: 0.95rem;
+}
+
 .faX{
     font-size: 1rem;
     padding: 27px 20px;
+}
+
+.blur{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px)
 }
 
 .dropdown{
@@ -70,8 +84,9 @@ header{
     margin-bottom: 1px;
 }
 
-.fa-address-card{
+.fa-address-card, .fa-code, .fa-folder-open, .fa-square-phone{
     padding-right: 10px;
+    width: 20px;
 }
 
 .dropmenu a:hover{
