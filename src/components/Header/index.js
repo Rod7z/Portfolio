@@ -32,17 +32,33 @@ function Header() {
               <div className='dropdown'>
                 <FontAwesomeIcon className='faX' icon={faX} onClick={closeMenu}/>
                 <ul className='dropmenu'>
-                  <li><Link onClick={closeMenu}><FontAwesomeIcon icon={faAddressCard}/>Sobre</Link></li>
-                  <li><Link onClick={closeMenu}><FontAwesomeIcon icon={faCode} />Habilidades</Link></li>
-                  <li><Link onClick={closeMenu}><FontAwesomeIcon icon={faFolderOpen} />Projetos</Link></li>
-                  <li><Link onClick={closeMenu}><FontAwesomeIcon icon={faSquarePhone} />Contato</Link></li>
+                  <li>
+                    <Link onClick={closeMenu}>
+                      <FontAwesomeIcon icon={faAddressCard}/> Sobre
+                    </Link>
+                  </li>
+                  <li>
+                    <Link onClick={closeMenu}>
+                      <FontAwesomeIcon icon={faCode} /> Habilidades
+                    </Link>
+                  </li>
+                  <li>
+                    <Link onClick={closeMenu}>
+                      <FontAwesomeIcon icon={faFolderOpen} /> Projetos
+                    </Link>
+                  </li>
+                  <li>
+                    <Link onClick={closeMenu}>
+                      <FontAwesomeIcon icon={faSquarePhone} /> Contato
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </nav>
           )}
 
           {window.innerWidth > mobileWidth && (
-            <nav id='nav'>
+            <nav className='navBar'>
               <ul>
                 <li><Link>Sobre</Link></li>
                 <li><Link>Habilidades</Link></li>

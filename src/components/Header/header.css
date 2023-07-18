@@ -21,7 +21,7 @@ header{
     margin-left: 5%;
 }
 
-#nav li a:hover{
+.navBar li a:hover{
     background-color: #9c9c9c52;
     cursor: pointer;
     border-radius: 4px;
@@ -63,7 +63,7 @@ nav a {
     top: -1px;
     right: 0;
     background-color: #7c7c7c;
-    /*animation: slideMenu 0.7s ease-out;*/
+    /********animation: slideMenu 0.7s ease-out;*********/
 }
 
 @keyframes slideMenu {
