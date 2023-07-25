@@ -20,7 +20,7 @@ function Sobre() {
                 <li>JS<FontAwesomeIcon icon={faSquareJs} /></li>
                 <li>HTML<FontAwesomeIcon icon={faHtml5} /></li>
                 <li>CSS<FontAwesomeIcon icon={faCss3Alt} /></li>
-                <li>CSS<FontAwesomeIcon icon={faGitAlt} /></li>
+                <li>Git<FontAwesomeIcon icon={faGitAlt} /></li>
             </ul>
         </section>
     </article>
