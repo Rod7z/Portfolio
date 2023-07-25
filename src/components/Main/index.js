@@ -19,6 +19,14 @@ function Main() {
         <div className='foto'>
             <img/>
         </div>
+
+        
+        <div className='sobre'>
+            <h2>Sobre</h2>
+            <p>
+                Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.
+            </p>
+        </div>
     </main>
    </div>
  );
