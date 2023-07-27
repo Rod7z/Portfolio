@@ -1,6 +1,5 @@
 .article{
     border: 1px solid red;
-    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,25 +7,10 @@
     margin-bottom: 30px;
 }
 
-.sobre{
-    padding: 30px 0;
-}
-
-.sobre h2{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.sobre p{
-    font-size: 1rem;
-    width: 100%;
-    max-width: 800px;
-    min-width: 200px;
-    padding: 0 50px;
-}
-
 .skills{
+    background-color: aqua;
+    position: relative;
+    top: -130px;
     padding: 30px;
 }
 
@@ -44,7 +28,10 @@
 }
 
 .skills li{
-    background-color: antiquewhite;
     width: 100px;
     height: 100px;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

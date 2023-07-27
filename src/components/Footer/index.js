@@ -2,9 +2,11 @@ import './footer.css';
 
 function Footer() {
  return (
-   <footer>
-      &copy; R
-   </footer>
+    <footer>
+      <div class="final">
+        <div class="copy"><span>&copy; R</span></div>
+      </div>
+    </footer>
  );
 }
 

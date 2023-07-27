@@ -10,9 +10,9 @@ function Main() {
         <div className='info'>
             <h1>Rodrigo</h1>
             <ul>
-                <li>G<FontAwesomeIcon icon={faGithub} /></li>
-                <li>L<FontAwesomeIcon icon={faLinkedin} /></li>
-                <li>C<FontAwesomeIcon icon={faFilePdf} /></li>
+                <li><FontAwesomeIcon icon={faGithub} /></li>
+                <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                <li><FontAwesomeIcon icon={faFilePdf} /></li>
             </ul>
         </div>
         

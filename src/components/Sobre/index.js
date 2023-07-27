@@ -6,21 +6,14 @@ function Sobre() {
  return (
    <div className='article'>
     <article>
-        <section className='sobre'>
-            <h2>Sobre</h2>
-            <p>
-                Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.Texto contando um pouco sobre mim.
-            </p>
-        </section>
-
         <section className='skills'>
             <h2>Habilidades</h2>
             <ul>
-                <li>React<FontAwesomeIcon icon={faReact} /></li>
-                <li>JS<FontAwesomeIcon icon={faSquareJs} /></li>
-                <li>HTML<FontAwesomeIcon icon={faHtml5} /></li>
-                <li>CSS<FontAwesomeIcon icon={faCss3Alt} /></li>
-                <li>Git<FontAwesomeIcon icon={faGitAlt} /></li>
+                <li><FontAwesomeIcon icon={faReact} /></li>
+                <li><FontAwesomeIcon icon={faSquareJs} /></li>
+                <li><FontAwesomeIcon icon={faHtml5} /></li>
+                <li><FontAwesomeIcon icon={faCss3Alt} /></li>
+                <li><FontAwesomeIcon icon={faGitAlt} /></li>
             </ul>
         </section>
     </article>
