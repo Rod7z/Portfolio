@@ -9,9 +9,8 @@
 
 .skills{
     background-color: aqua;
-    position: relative;
-    top: -130px;
-    padding: 30px;
+    margin-top: -86px;
+    padding: 15px;
 }
 
 .skills h2{

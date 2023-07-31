@@ -24,7 +24,7 @@ function Header() {
         <div className='menu'>
 
           {window.innerWidth <= mobileWidth && menu && (
-            <FontAwesomeIcon icon={faBars} onClick={openMenu}/>
+              <FontAwesomeIcon icon={faBars} onClick={openMenu} />
           )}
 
           {window.innerWidth <= mobileWidth && menu === false && (

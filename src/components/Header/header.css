@@ -58,17 +58,17 @@ nav a {
 .dropdown{
     display: block;
     position: absolute;
-    width: 30%;
+    width: 0%;
     height: 100vh;
-    top: -1px;
+    top: 0;
     right: 0;
-    background-color: #7c7c7c;
-    /********animation: slideMenu 0.7s ease-out;*********/
+    background-color: #000;
+    animation: slideMenu 0.5s forwards ease-out;
 }
 
 @keyframes slideMenu {
-    from {right:-30%;}
-    to {right: 0;}
+    from {width: 0%;}
+    to {width: 30%;}
   }
 
 .dropmenu{
