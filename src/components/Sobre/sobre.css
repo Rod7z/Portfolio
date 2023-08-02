@@ -1,5 +1,5 @@
 .article{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,9 +8,11 @@
 }
 
 .skills{
-    background-color: aqua;
+    background-color: #002B60;
+    box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.50);
     margin-top: -86px;
     padding: 15px;
+    color: #DFF9FB;
 }
 
 .skills h2{

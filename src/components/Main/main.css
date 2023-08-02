@@ -4,12 +4,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    color: #DFF9FB;
 }
 
 .info, .foto, .sobre{
     width: 30%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .info{
