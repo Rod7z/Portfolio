@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, } from '@fortawesome/free-brands-svg-icons'
 
+
 function Main() {
  return (
    <div>
@@ -17,7 +18,7 @@ function Main() {
         </div>
         
         <div className='foto'>
-            <img/>
+            <img src='./img/perfil.jpg' alt='foto' />
         </div>
 
         
