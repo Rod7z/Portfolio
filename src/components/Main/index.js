@@ -11,9 +11,23 @@ function Main() {
         <div className='info'>
             <h1>Rodrigo</h1>
             <ul>
-                <li><FontAwesomeIcon icon={faGithub} /></li>
-                <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                <li><FontAwesomeIcon icon={faFilePdf} /></li>
+                <li>
+                    <a href='https://github.com/Rod7z'>
+                        <FontAwesomeIcon icon={faGithub}/>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href='https://www.linkedin.com/in/rodrigodesousapereira/'>
+                        <FontAwesomeIcon icon={faLinkedin}/>
+                    </a>
+                </li>
+
+                <li>
+                    <a href='./doc/Curriculo_Rodrigo.pdf' download='Curriculo-Rodrigo.pdf'>
+                        <FontAwesomeIcon icon={faFilePdf}/>
+                    </a>
+                </li>
             </ul>
         </div>
         

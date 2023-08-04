@@ -4,7 +4,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     color: #DFF9FB;
 }
 
@@ -25,6 +25,11 @@ main{
 .info ul li{
     padding: 10px;
     font-size: 1.2rem;
+}
+
+.info ul li a{
+    background: none;
+    padding: 0;
 }
 
 .foto{
