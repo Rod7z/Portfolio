@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX, faAddressCard, faCode, faFolderOpen, faSquarePhone } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
-const mobileWidth = 1000;
 
 function Header() {
+  const mobileWidth = 1000;
   const [menu, setMenu] = useState(true);
 
   function openMenu(){

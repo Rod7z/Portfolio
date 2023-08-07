@@ -93,5 +93,7 @@ nav a {
 }
 
 .dropmenu a:hover{
-    background-color: #FFF;
+    background-color: #DFF9FB;
+    color: #000;
+    transition: .3s all;
 }
